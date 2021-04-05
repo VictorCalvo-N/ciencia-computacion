@@ -11,7 +11,7 @@ cout << "Ingrese número de escalones: \n";
   cin >> escalon;
   cout << "En que escalon estara la persona? \n";
   cin >> persona;
-    if(persona == escalon){
+    if((persona*-1) == escalon){
       cout << "_P_";
     }else{
       cout << "___";
@@ -34,8 +34,10 @@ cout << "Ingrese número de escalones: \n";
      for(int k = 0; k < j; k++) {
        cout << "    ";
      }
-      if(persona == (escalon-(j+1))){
-        cout << "-" << escalon - j << " |_P_";
+      if((persona*-1) == (escalon-(j+1))){
+
+          cout << "-" << escalon - j << " |_P_";
+
       }
       else{
         cout << "-" << escalon - j << " |___";
@@ -48,7 +50,9 @@ cout << "Ingrese número de escalones: \n";
      } else {
        cout << "    ";
       if(persona == (escalon-(j+1))){
-        cout << " _p_| " << escalon - j << "\n";
+
+          cout << " _p_| " << escalon - j << "\n";
+
       }
       else{
         cout << " ___| " << escalon - j << "\n";
